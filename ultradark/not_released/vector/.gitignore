@@ -1,0 +1,18 @@
+*.exe
+*.txt
+tester
+dbg
+std_*
+lni_*
+folly_*
+*.swp
+*.stackdump
+
+# Visual Studio
+.vs/
+Debug/
+Release/
+*.vcxproj
+*.vcxproj.filters
+*.sln
+*.VC.db
