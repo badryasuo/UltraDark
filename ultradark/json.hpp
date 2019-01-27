@@ -403,7 +403,12 @@ namespace ultra
 						while (str.begin() != str.end())
 						{
 							char c = str.front();
-							if (c != ',' && c != ']')
+							if (c == '[')
+							{
+								val = '[' + takebetween(str, '[', ']') + ']';
+								str.erase(0, 2);
+							}
+							else if (c != ',' && c != ']')
 							{
 								val += c;
 								str.erase(0, 1);
